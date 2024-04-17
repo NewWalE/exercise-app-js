@@ -96,7 +96,8 @@ export default function Home() {
     let reardeltExercises = [
        'Seated rear delt fly',
        'Standing rear delt fly',
-       'Cross-cable rear delt fly'
+       'Cross-cable rear delt fly',
+       'I, T, Y'
     ];
 
     let shortheadtricepExercises = [
@@ -122,6 +123,8 @@ export default function Home() {
         'Incline alternating dumbell curl',
         'Standing alternating dumbell curl',
         'Drag curl',
+        'Barbell curl',
+        'Reverse barbell curl'
     ];
 
     let forearmExercises = [
@@ -164,7 +167,8 @@ export default function Home() {
     ];
 
     let adductorExercises = [
-        'Copenhagen plank',
+        'Copenhagen plank (static)',
+        'Copenhagen plank (hip drop)',
         'Adductor raise'
     ];
 
@@ -202,7 +206,7 @@ export default function Home() {
 
     let tibialisExercises = [
         'Leaning against wall tib raise',
-        'Tib machine raise (either hammer strength or at-home style one'
+        'Tib raise '
     ];
 
     let steadystateExercises = [
@@ -211,7 +215,7 @@ export default function Home() {
     ];
 
     let hiitExercises = [
-        '2:1 work to rest',
+        '2:1 work to rest (any cardio)',
         'Hill sprints',
         'Repeat 180m sprints'
     ];
