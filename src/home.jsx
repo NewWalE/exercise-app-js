@@ -222,7 +222,7 @@ export default function Home() {
     ];
 
     const [ goalState, setGoalState ] = useState('');
-    const [upperLowerState, setUpperLowerState] = useState('');
+    const [ upperLowerState, setUpperLowerState ] = useState('');
     const [ muscleGroupState, setMuscleGroupState ] = useState('');
     const [ primaryMuscleState, setPrimaryMuscleState ] = useState('');
     const [ movementNumberState, setMovementNumberState ] = useState(1);
