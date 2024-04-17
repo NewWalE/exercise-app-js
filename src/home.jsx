@@ -331,6 +331,7 @@ export default function Home() {
                 typeOfCardioState={typeOfCardioState}
                 coreState={coreState}
                 cardioState={cardioState}
+                superSetState={superSetState}
                 primaryMuscleState={primaryMuscleState}
                 muscleGroupState={muscleGroupState}
                 setCoreMuscleState={setCoreMuscleState}

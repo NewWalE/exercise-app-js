@@ -29,6 +29,7 @@ export default function ExerciseSelector(props) {
             <br />
             
             <SuperSetSelector
+                superSetState={props.superSetState}
                 handleSuperSet={props.handleSuperSet}
                 movementNumberState={props.movementNumberState}
             />
