@@ -22,7 +22,7 @@ export default function WorkoutGeneration(props) {
     
     function movementLogicSecondary(item) {
         for (let i = 0; i < item.length; i++) {
-          item[i] = item[i].toLowerCase().replace(/\s/g, '') + 'Exercises';
+          item[i] = item[i];
         }
         console.log(item);
     }
@@ -58,6 +58,10 @@ export default function WorkoutGeneration(props) {
             <br />
             
             Number of movements: {props.movementNumberState}
+
+            <br />
+
+            Workout: {}
         </div>
     )
 }
