@@ -5,23 +5,26 @@ export default function CoreSelector(props) {
 
     return(
         <div className='coreSection'>
-                <label>
                     <strong>Are you going to do core?</strong>
                     <br />
                     <input 
-                        type="checkbox"
-                        label="core"
-                        onClick={props.handleCore}
-                        disabled={props.primaryMuscleState === '' ? 'disabled' : ''}
-                        />
+                        type="radio"
+                        name="core"
+                        value="yes"
+                        onChange={props.handleCore}
+                        disabled={props.primaryMuscleState === '' ? true : false}
+                        checked={props.coreState === true}
+                    />
                     <label>Yes</label>
                     <input 
-                        type="checkbox"
-                        label="core"
-                        disabled={props.primaryMuscleState === '' ? 'disabled' : ''}
-                        />
+                        type="radio"
+                        name="cardio"
+                        value="no"
+                        onChange={props.handleCore}
+                        disabled={props.primaryMuscleState === '' ? true : false}
+                        checked={props.coreState === false}
+                    />
                     <label>No</label>
-                </label>
                 <br />
                 {props.coreState === true ? 
                     (
