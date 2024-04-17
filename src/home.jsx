@@ -225,7 +225,7 @@ export default function Home() {
     const [upperLowerState, setUpperLowerState] = useState('');
     const [ muscleGroupState, setMuscleGroupState ] = useState('');
     const [ primaryMuscleState, setPrimaryMuscleState ] = useState('');
-    const [ movementNumberState, setMovementNumberState ] = useState(0);
+    const [ movementNumberState, setMovementNumberState ] = useState(1);
     const [ superSetState, setSuperSetState ] = useState(false);
     const [ coreState, setCoreState ] = useState(false);
     const [ cardioState, setCardioState ] = useState(false);
