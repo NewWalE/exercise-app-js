@@ -1,23 +1,23 @@
-import React from 'react';
-
 export default function WorkoutGeneration(props) {
 
-    let primaryMuscleGroup = props.primaryMuscleState.value
-    let secondaryMuscleGroup = []
+    let primaryMuscleGroup = props.primaryMuscleState.value;
     
-    function secondaryMuscleGroups(item) {
-        for (let i = 0; i < item.length; i++) {
-            if (item[i].value !== props.primaryMuscleState.value) {
-                secondaryMuscleGroup.push(item[i].value);
+    function secondaryMuscleGroups(muscleGroups) {
+        let secondaryMuscleGroup = [];
+        for (let i = 0; i < muscleGroups.length; i++) {
+            if (muscleGroups[i].value !== props.primaryMuscleState.value) {
+                secondaryMuscleGroup.push(muscleGroups[i].value);
             }
         }
         movementLogicSecondary(secondaryMuscleGroup);
-        return secondaryMuscleGroup.map((element) => <li>{element}</li>);
+        return secondaryMuscleGroup.map((element, index) => <li key={index}>{element}</li>);
     };
 
     function movementLogicPrimary(item) {
         let primaryArr = item.value;
         let lowerCase = `${primaryArr.toLowerCase()}Exercises`;
+        // This function doesn't return anything, which might be unintended
+        // Consider what this function should output or how it affects the state
     }
     
     function movementLogicSecondary(item) {
@@ -25,40 +25,35 @@ export default function WorkoutGeneration(props) {
           item[i] = item[i].toLowerCase().replace(/\s/g, '') + 'Exercises';
         }
         console.log(item);
-      }
+    }
 
-    if (props.primaryMuscleState !== '') {
+    // Ensure you check correctly what you need from props.primaryMuscleState
+    if (props.primaryMuscleState.value) {
         movementLogicPrimary(props.primaryMuscleState);
     };
 
-
     return (
         <div>
-            <button
-            type="button"
-            //on change is needed to generate the workout
-            >
+            <button type="button">
                 Generate Workout
             </button>
 
-            <br />
-            <br />
+            <br /><br />
 
             Generated workout
 
-            {props.primaryMuscleState > 0 ? movementLogicPrimary(props.primaryMuscleState) : ''}
+            {/* Render this only if primaryMuscleState is properly checked */}
+            {props.primaryMuscleState.value ? movementLogicPrimary(props.primaryMuscleState) : null}
 
-            <br />
-            <br />
+            <br /><br />
 
             Primary Muscle Group: {primaryMuscleGroup}
 
-            <br /> 
-            <br />
+            <br /><br />
 
-            {/* Secondary Muscle Groups: {props.muscleGroupState.length > 1 ?
-            secondaryMuscleGroups(props.muscleGroupState.map()) */}
-            : ''}
+            Secondary Muscle Groups: {props.muscleGroupState && props.muscleGroupState.length > 1 ?
+                secondaryMuscleGroups(props.muscleGroupState)
+                : 'No secondary muscle groups'}
 
             <br />
             
