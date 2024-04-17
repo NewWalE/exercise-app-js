@@ -19,7 +19,7 @@ export default function MovementNumberSelector(props) {
                     disabled={props.primaryMuscleState === '' ? 'disabled' : ''}
                 >
                     {Array.from({ length: 15 }, (_, i) => (
-                        <option key={i} value={i}>{i + 1}</option>
+                        <option key={i + 1} value={i + 1}>{i + 1}</option>
                     ))}
                 </select> 
                 <label> movements</label>
