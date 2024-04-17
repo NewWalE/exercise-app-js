@@ -18,7 +18,7 @@ export default function CoreSelector(props) {
                     <label>Yes</label>
                     <input 
                         type="radio"
-                        name="cardio"
+                        name="core"
                         value="no"
                         onChange={props.handleCore}
                         disabled={props.primaryMuscleState === '' ? true : false}
