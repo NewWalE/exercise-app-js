@@ -20,105 +20,104 @@ export default function Home() {
         {value: 'Full body', label: 'Full body'}
     ];
     let upperMuscleGroupArray = [
-        {value: 'Neck', label: 'Neck',},
-        {value: 'Traps', label: 'Traps'},
-        {value: 'Chest', label: 'Chest'},
-        {value: 'Front delt', label: 'Front delt'},
-        {value: 'Lateral delt', label: 'Lateral delt'},
-        {value: 'Rear delt', label: 'Rear delt'},
-        {value: 'Short Head Ticep', label: 'Short Head Ticep'},
-        {value: 'Long Head Ticep', label: 'Long Head Ticep'},
-        {value: 'Short Head Bicep', label: 'Short Head Bicep'},
-        {value: 'Long Head Bicep', label: 'Long Head Bicep'},
-        {value: 'Forearms', label: 'Forearms'},
-        {value: 'Lats (width)', label: 'Lats (width)'},
-        {value: 'Lats (thickness)', label: 'Lats (thickness)'},
-        {value: 'Pelvis', label: 'Pelvis'},
-        {value: 'Lower Back', label: 'Lower Back'}
+        {value: 'neck', label: 'Neck',},
+        {value: 'traps', label: 'Traps'},
+        {value: 'chest', label: 'Chest'},
+        {value: 'frontdelt', label: 'Front delt'},
+        {value: 'lateraldelt', label: 'Lateral delt'},
+        {value: 'reardelt', label: 'Rear delt'},
+        {value: 'shortheadticep', label: 'Short Head Ticep'},
+        {value: 'longheadtricep', label: 'Long Head Ticep'},
+        {value: 'shortheadbicep', label: 'Short Head Bicep'},
+        {value: 'longheadbicep', label: 'Long Head Bicep'},
+        {value: 'forearms', label: 'Forearms'},
+        {value: 'latwidth', label: 'Lats (width)'},
+        {value: 'latthickness', label: 'Lats (thickness)'},
+        {value: 'pelvis', label: 'Pelvis'},
     ];
     let lowerMuscleGroupArray = [
-        {value: 'Lower Back', label: 'Lower Back'},
+        {value: 'lowerback', label: 'Lower Back'},
         {value: 'Glutes', label: 'Glutes'},
-        {value: 'Adductors', label: 'Adductors'},
-        {value: 'Abductors', label: 'Abductors'},
-        {value: 'Quads', label: 'Quads'},
-        {value: 'Hamstrings', label: 'Hamstrings'},
-        {value: 'Calves', label: 'Calves'},
-        {value:'Tibualous', label: 'Tibualous'}
+        {value: 'adductors', label: 'Adductors'},
+        {value: 'abductors', label: 'Abductors'},
+        {value: 'quads', label: 'Quads'},
+        {value: 'hamstrings', label: 'Hamstrings'},
+        {value: 'calves', label: 'Calves'},
+        {value:'tibualous', label: 'Tibualous'}
     ];
     let cardioArray = [
-        {value: 'Steady state', label: 'Steady state'},
-        {value: 'HIIT', label: 'HIIT'},
-        {value: 'Circuit', label: 'Circuit'}
+        {value: 'steadystate', label: 'Steady state'},
+        {value: 'hiit', label: 'HIIT'},
+        {value: 'circuit', label: 'Circuit'}
     ];
     let coreMuscleArray = [
-        {value: 'Abs', label: 'Abs'},
-        {value: 'Obliques', label: 'Obliques'},
-        {value: 'Psoas', label: 'Psoas'},
-        {value: 'Erector Spinae', label: 'Erector Spinae'}
+        {value: 'abs', label: 'Abs'},
+        {value: 'obliques', label: 'Obliques'},
+        {value: 'psoas', label: 'Psoas'},
+        {value: 'erectorspinae', label: 'Erector Spinae'}
     ]
 
     // exercise lists 
 
-    let neckExercises = [
+    let neck = [
         'Side extention',
         'Rear extention',
         'Front extention'
     ];
 
-    let trapExercises = [
+    let trap = [
         'Seated shrugs',
         'Wide grip shrugs',
         'Clean shrugs',
         'Farmers carry'
     ];
 
-    let chestExercises = [
+    let chest = [
         'Flat barbell bench',
         'Flat dumbell bench',
         'Cross-body decline hammer strength',
         'Low incline dumbell becnh'
     ];
 
-    let frontdeltExercises = [
+    let frontdelt = [
        'Barbell overhead press',
        'Seated dumbell press',
        'Javelin press',
        'Straight bar front raise'
     ];
 
-    let lateraldeltExercises = [
+    let lateraldelt = [
        'Dumbell lateral raise',
        'Cable lateral raise',
        'Hanging dumbell lateral raise'
     ];
 
-    let reardeltExercises = [
+    let reardelt = [
        'Seated rear delt fly',
        'Standing rear delt fly',
        'Cross-cable rear delt fly',
        'I, T, Y'
     ];
 
-    let shortheadtricepExercises = [
+    let shortheadtricep = [
         'Rope tricep extention',
         'Straight bar tricep extention',
         'Bench dips',
     ];
 
-    let longheadtricepExercises = [
+    let longheadtricep = [
         'Single arm dumbell overhead tricep extention',
         'French press',
         'Overhead rope tricep extention',
     ];
 
-    let longheadbicepExercises = [
+    let longheadbicep = [
         'Dumbell hammer curl',
         'Rope hammer curl',
         'Cross-body hammer curl'
     ];
 
-    let shortheadbicepExercises = [
+    let shortheadbicep = [
         'Waiter curls',
         'Incline alternating dumbell curl',
         'Standing alternating dumbell curl',
@@ -127,20 +126,20 @@ export default function Home() {
         'Reverse barbell curl'
     ];
 
-    let forearmExercises = [
+    let forearm = [
         'Reverse wrist curl',
         'Wrist curl',
         'Thumb-up wrist curl'
     ];
 
-    let latwidthExercises = [
+    let latwidth = [
         'Pull-ups',
         'Wide neutral grip lat pull down',
         'Narrow neutral grip lat pull down',
         'Dumbell pull over (hips low)'
     ];
 
-    let latthicknessExercises = [
+    let latthickness = [
         'Single arm dumbell row',
         'Seated row',
         'Low row',
@@ -148,37 +147,37 @@ export default function Home() {
         'Bent over barbell row'
     ];
 
-    let pelvisExercises = [
+    let pelvis = [
         'Kegal pulses',
         'Kegal holds'
     ];
     
-    let lowerbackExercises = [
+    let lowerback = [
         'straight bar deadlift',
         'trapbar deadlift',
         'supermans'
     ];
 
-    let gluteExercises = [
+    let glute = [
         'Long step walking lunge',
         'Long step bulgarian split squat',
         'Glute bridge',
         'Dumbell sumo squat (elevated, T-bell like)'
     ];
 
-    let adductorExercises = [
+    let adductor = [
         'Copenhagen plank (static)',
         'Copenhagen plank (hip drop)',
         'Adductor raise'
     ];
 
-    let abductorExercises = [
+    let abductor = [
         'Banded side steps',
         'Clamshells',
         'Abductor raise'
     ];
 
-    let quadExercises = [
+    let quad = [
         'Back squat',
         'Front squat',
         'Goblet squat',
@@ -188,7 +187,7 @@ export default function Home() {
         'Sissy squats'
     ];
 
-    let hamstringExercises = [
+    let hamstring = [
         'Nordic hamstring raise',
         'Glute Hamtring Raise (GHR)',
         'Romanian deadlift',
@@ -197,30 +196,30 @@ export default function Home() {
         'B-stance deadlift'
     ];
 
-    let calfExercises = [
+    let calf = [
         'Donkey calf raise',
         'Seated calf raise',
         'Standing calf raise',
         'Squeezing ball calf raise'
     ];
 
-    let tibialisExercises = [
+    let tibialis = [
         'Leaning against wall tib raise',
         'Tib raise '
     ];
 
-    let steadystateExercises = [
+    let steadystate = [
         'Treadmill incline walk',
         'Stair stepper'
     ];
 
-    let hiitExercises = [
+    let hiit = [
         '2:1 work to rest (any cardio)',
         'Hill sprints',
         'Repeat 180m sprints'
     ];
 
-    let circuitExercises = [
+    let circuit = [
         '50 mountain climbers, 25 push-ups, 100 flutter kicks, 1 min jump rope, 1 min rest',
         '2:1 single under : double under pyramid'
     ];
@@ -352,31 +351,31 @@ export default function Home() {
                 muscleGroupState={muscleGroupState}
                 coreMuscleState={coreMuscleState}
                 typeOfCardioState={typeOfCardioState}
-                neckExercises={neckExercises}
-                trapExercises={trapExercises}
-                chestExercises={chestExercises}
-                frontdeltExercises={frontdeltExercises}
-                lateraldeltExercises={lateraldeltExercises}
-                reardeltExercises={reardeltExercises}
-                shortheadtricepExercises={shortheadtricepExercises}
-                longheadtricepExercises={longheadtricepExercises}
-                shortheadbicepExercises={shortheadbicepExercises}
-                longheadbicepExercises={longheadbicepExercises}
-                forearmExercises={forearmExercises}
-                latwidthExercises={latwidthExercises}
-                latthicknessExercises={latthicknessExercises}
-                pelvisExercises={pelvisExercises}
-                lowerbackExercises={lowerbackExercises}
-                gluteExercises={gluteExercises}
-                adductorExercises={adductorExercises}
-                abductorExercises={abductorExercises}
-                quadExercises={quadExercises}
-                hamstringExercises={hamstringExercises}
-                calfExercises={calfExercises}
-                tibialisExercises={tibialisExercises}
-                steadystateExercises={steadystateExercises}
-                hiitExercises={hiitExercises}
-                circuitExercises={circuitExercises}
+                neck={neck}
+                trap={trap}
+                chest={chest}
+                frontdelt={frontdelt}
+                lateraldelt={lateraldelt}
+                reardelt={reardelt}
+                shortheadtricep={shortheadtricep}
+                longheadtricep={longheadtricep}
+                shortheadbicep={shortheadbicep}
+                longheadbicep={longheadbicep}
+                forearm={forearm}
+                latwidth={latwidth}
+                latthickness={latthickness}
+                pelvis={pelvis}
+                lowerback={lowerback}
+                glute={glute}
+                adductor={adductor}
+                abductor={abductor}
+                quad={quad}
+                hamstring={hamstring}
+                calf={calf}
+                tibialis={tibialis}
+                steadystate={steadystate}
+                hiit={hiit}
+                circuit={circuit}
             />
         </>
     );
