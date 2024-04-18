@@ -1,6 +1,6 @@
 export default function WorkoutGeneration(props) {
 
-    let primaryMuscleGroup = props.primaryMuscleState.value;
+    let primaryMuscleGroup = props.primaryMuscleState.label;
     
     function secondaryMuscleGroups(muscleGroups) {
         let secondaryMuscleGroup = [];
@@ -27,20 +27,12 @@ export default function WorkoutGeneration(props) {
         console.log(item);
     }
 
-    // Ensure you check correctly what you need from props.primaryMuscleState
-    if (props.primaryMuscleState.value) {
-        movementLogicPrimary(props.primaryMuscleState);
-    };
-
     return (
         <div>
             <button type="button">
                 Generate Workout
             </button>
 
-            <br /><br />
-
-            Generated workout
 
             {/* Render this only if primaryMuscleState is properly checked */}
             {props.primaryMuscleState.value ? movementLogicPrimary(props.primaryMuscleState) : null}
@@ -59,7 +51,7 @@ export default function WorkoutGeneration(props) {
             
             Number of movements: {props.movementNumberState}
 
-            <br />
+            <br /><br />
 
             Workout: {}
         </div>
