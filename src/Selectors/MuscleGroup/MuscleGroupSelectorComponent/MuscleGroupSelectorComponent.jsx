@@ -7,8 +7,8 @@ export default function MuscleGroupSelectorComponent(props) {
             <p>Muscle Groups</p>
             <Select
                 key={props.upperLowerState}
-                options={props.upperLowerState.value == 'upperbody' ? props.upperMuscleGroupArray 
-                : props.upperLowerState.value == 'lowerbody' ? props.lowerMuscleGroupArray 
+                options={props.upperLowerState.value === 'upperbody' ? props.upperMuscleGroupArray 
+                : props.upperLowerState.value === 'lowerbody' ? props.lowerMuscleGroupArray 
                 : props.upperMuscleGroupArray.concat(props.lowerMuscleGroupArray)
             }
                 isMulti
