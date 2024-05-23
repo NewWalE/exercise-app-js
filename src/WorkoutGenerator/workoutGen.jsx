@@ -6,7 +6,7 @@ export default function WorkoutGeneration(props) {
         let secondaryMuscleGroup = [];
         for (let i = 0; i < muscleGroups.length; i++) {
             if (muscleGroups[i].value !== props.primaryMuscleState.value) {
-                secondaryMuscleGroup.push(muscleGroups[i].value);
+                secondaryMuscleGroup.push(muscleGroups[i].label);
             }
         }
         movementLogicSecondary(secondaryMuscleGroup);
@@ -15,7 +15,6 @@ export default function WorkoutGeneration(props) {
 
     function movementLogicPrimary(item) {
         let primaryArr = item.value;
-        let lowerCase = `${primaryArr.toLowerCase()}Exercises`;
         // This function doesn't return anything, which might be unintended
         // Consider what this function should output or how it affects the state
     }
