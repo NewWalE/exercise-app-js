@@ -15,9 +15,9 @@ export default function Home() {
         {value: 'Endurance', label: 'Endurance'}
     ];
     let upperLowerArray = [
-        {value: 'Upper body', label: 'Upper body'},
-        {value: 'Lower body', label: 'Lower body'},
-        {value: 'Full body', label: 'Full body'}
+        {value: 'upperbody', label: 'Upper body'},
+        {value: 'lowerbody', label: 'Lower body'},
+        {value: 'fullody', label: 'Full body'}
     ];
     let upperMuscleGroupArray = [
         {value: 'neck', label: 'Neck',},
@@ -37,7 +37,7 @@ export default function Home() {
     ];
     let lowerMuscleGroupArray = [
         {value: 'lowerback', label: 'Lower Back'},
-        {value: 'Glutes', label: 'Glutes'},
+        {value: 'glutes', label: 'Glutes'},
         {value: 'adductors', label: 'Adductors'},
         {value: 'abductors', label: 'Abductors'},
         {value: 'quads', label: 'Quads'},
