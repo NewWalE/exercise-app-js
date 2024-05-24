@@ -14,7 +14,7 @@ export default function WorkoutGeneration(props) {
     };
 
     function movementLogicPrimary(item) {
-        let primaryArr = item.value;
+        let primaryMuscleGroup = item.value;
         // This function doesn't return anything, which might be unintended
         // Consider what this function should output or how it affects the state
     }
@@ -52,7 +52,9 @@ export default function WorkoutGeneration(props) {
 
             <br /><br />
 
-            Workout: {}
+            Workout: {
+
+            }
         </div>
     )
 }
