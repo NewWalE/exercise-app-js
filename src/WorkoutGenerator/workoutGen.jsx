@@ -1,6 +1,9 @@
 export default function WorkoutGeneration(props) {
 
-    let primaryMuscleGroup = props.primaryMuscleState.label;
+    let primaryMuscleGroupLabel = props.primaryMuscleState.label;
+    let secondaryMuscleGroupArray = [];
+    let allMuscleGroups = [props.primaryMuscleState]
+
     
     function secondaryMuscleGroups(muscleGroups) {
         let secondaryMuscleGroup = [];
@@ -15,16 +18,24 @@ export default function WorkoutGeneration(props) {
 
     function movementLogicPrimary(item) {
         let primaryMuscleGroup = item.value;
-        // This function doesn't return anything, which might be unintended
-        // Consider what this function should output or how it affects the state
     }
     
     function movementLogicSecondary(item) {
         for (let i = 0; i < item.length; i++) {
           item[i] = item[i];
+          secondaryMuscleGroupArray.push(item[i])
         }
-        console.log(item);
     }
+
+    function generateWorkout() {
+        let count = 0
+        let allMuscleGroups = [props.primaryMuscleState.value].concat(secondaryMuscleGroupArray)
+        console.log(secondaryMuscleGroupArray)
+        // while (count < props.movementNumberState) {
+
+        // }
+    }
+    generateWorkout();
 
     return (
         <div>
@@ -38,7 +49,7 @@ export default function WorkoutGeneration(props) {
 
             <br /><br />
 
-            Primary Muscle Group: {primaryMuscleGroup}
+            Primary Muscle Group: {primaryMuscleGroupLabel}
 
             <br /><br />
 
@@ -52,9 +63,7 @@ export default function WorkoutGeneration(props) {
 
             <br /><br />
 
-            Workout: {
-
-            }
+            Workout: 
         </div>
     )
 }
