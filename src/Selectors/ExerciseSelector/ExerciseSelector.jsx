@@ -1,7 +1,7 @@
 import React from 'react';
 
 import CoreSelector from './CoreSelector/CoreSelector';
-import SuperSetSelector from './SuperSetSelector/SuperSetSelector';
+// import SuperSetSelector from './SuperSetSelector/SuperSetSelector';
 import MovementNumberSelector from './MovementNumberSelector/MovementNumberSelector';
 import CardioSelector from './CardioSelector/CardioSelector';
 
@@ -26,13 +26,13 @@ export default function ExerciseSelector(props) {
                 movementNumberState={props.movementNumberState}
             />
 
-            <br />
+            {/* <br />
             
             <SuperSetSelector
                 superSetState={props.superSetState}
                 handleSuperSet={props.handleSuperSet}
                 movementNumberState={props.movementNumberState}
-            />
+            /> */}
 
             <br />
 

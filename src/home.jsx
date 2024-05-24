@@ -75,8 +75,8 @@ export default function Home() {
     let chest = [
         'Flat barbell bench',
         'Flat dumbell bench',
-        'Cross-body decline hammer strength',
-        'Low incline dumbell becnh'
+        'Incline barbell bench',
+        'Low incline dumbell bench'
     ];
 
     let frontdelt = [
@@ -289,9 +289,7 @@ export default function Home() {
                         groups from muscleGroupState
                     </li>
                     <li>number of exercises (assumes 1 heavy compound to start)</li>
-                    <li>if you want super sets (assumes anything that isn't
-                        primary is an accessory)
-                    </li>
+                    
                     <li>if you are doing abs</li>
                     <li>if you are doing cardio (if yes what kind [HIIT, steady state])</li>
                      --------------------------------------------------------------------
