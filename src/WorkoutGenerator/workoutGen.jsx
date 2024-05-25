@@ -6,13 +6,15 @@ export default function WorkoutGeneration(props) {
 
     
     function secondaryMuscleGroups(muscleGroups) {
+        console.log(Object.keys(muscleGroups))
         let secondaryMuscleGroup = [];
         for (let i = 0; i < muscleGroups.length; i++) {
             if (muscleGroups[i].value !== props.primaryMuscleState.value) {
                 secondaryMuscleGroup.push(muscleGroups[i].label);
             }
         }
-        return secondaryMuscleGroup.map((element, index) => <li key={index}>{element}</li>);
+        secondaryMuscleGroup.map((element, index) => <li key={index}>{element}</li>);
+        return secondaryMuscleGroup
     };
 
     // function movementLogicPrimary(item) {
