@@ -239,7 +239,7 @@ export default function Home() {
         setUpperLowerState(selectedOption);
     }
 
-    const handleMuscleGroupSelect = (selectedOptions) => {
+    const handleMuscleGroupState = (selectedOptions) => {
         setMuscleGroupState(selectedOptions);
     }
 
@@ -313,7 +313,7 @@ export default function Home() {
                 upperMuscleGroupArray={upperMuscleGroupArray}
                 lowerMuscleGroupArray={lowerMuscleGroupArray}
                 upperLowerState={upperLowerState}
-                handleMuscleGroupSelect={handleMuscleGroupSelect}
+                handleMuscleGroupState={handleMuscleGroupState}
                 muscleGroupState={muscleGroupState}
                 handlePrimaryMuscle={handlePrimaryMuscle}
             />

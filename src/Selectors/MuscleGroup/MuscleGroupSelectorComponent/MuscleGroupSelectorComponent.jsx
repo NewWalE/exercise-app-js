@@ -1,7 +1,7 @@
 import React from 'react';
 import Select from 'react-select';
 
-export default function MuscleGroupSelectorComponent(props) {
+export default function MuscleGroupStateComponent(props) {
     return(
         <div>
             <p>Muscle Groups</p>
@@ -13,7 +13,7 @@ export default function MuscleGroupSelectorComponent(props) {
             }
                 isMulti
                 placeholder="Select a muscle group"
-                onChange={props.handleMuscleGroupSelect}
+                onChange={props.handleMuscleGroupState}
                 isDisabled={props.upperLowerState === '' ? true : false}
             />
         </div>
