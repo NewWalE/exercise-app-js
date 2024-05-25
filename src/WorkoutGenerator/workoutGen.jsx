@@ -2,7 +2,7 @@ export default function WorkoutGeneration(props) {
 
     let primaryMuscleGroupLabel = props.primaryMuscleState.label;
     let secondaryMuscleGroupArray = [];
-    let allMuscleGroups = [props.primaryMuscleState]
+    let allMuscleGroups = [props.primaryMuscleState.value]
 
     
     function secondaryMuscleGroups(muscleGroups) {
@@ -12,25 +12,22 @@ export default function WorkoutGeneration(props) {
                 secondaryMuscleGroup.push(muscleGroups[i].label);
             }
         }
-        movementLogicSecondary(secondaryMuscleGroup);
         return secondaryMuscleGroup.map((element, index) => <li key={index}>{element}</li>);
     };
 
-    function movementLogicPrimary(item) {
-        let primaryMuscleGroup = item.value;
-    }
+    // function movementLogicPrimary(item) {
+    //     let primaryMuscleGroup = item.value;
+    // }
     
-    function movementLogicSecondary(item) {
-        for (let i = 0; i < item.length; i++) {
-          item[i] = item[i];
-          secondaryMuscleGroupArray.push(item[i])
-        }
-    }
+    // function movementLogicSecondary(item) {
+    //     for (let i = 0; i < item.length; i++) {
+    //       item[i] = item[i];
+    //     }
+    // }
 
     function generateWorkout() {
         let count = 0
-        let allMuscleGroups = [props.primaryMuscleState.value].concat(secondaryMuscleGroupArray)
-        console.log(secondaryMuscleGroupArray)
+        console.log(allMuscleGroups)
         // while (count < props.movementNumberState) {
 
         // }
@@ -45,7 +42,7 @@ export default function WorkoutGeneration(props) {
 
 
             {/* Render this only if primaryMuscleState is properly checked */}
-            {props.primaryMuscleState.value ? movementLogicPrimary(props.primaryMuscleState) : null}
+            {/* {props.primaryMuscleState.value ? movementLogicPrimary(props.primaryMuscleState) : null} */}
 
             <br /><br />
 
